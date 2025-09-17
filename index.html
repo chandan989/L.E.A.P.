@@ -28,7 +28,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 4rem;
+            padding: 2rem 4rem;
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
@@ -76,19 +76,6 @@
             background-color: rgba(34, 197, 94, 0.1);
             transform: translateY(-50%) scale(1.1);
         }
-        .flow-arrow {
-            position: relative;
-            color: #16a34a;
-        }
-        .flow-arrow::after {
-            content: '-->';
-            position: absolute;
-            font-size: 2rem;
-            font-weight: bold;
-            top: 50%;
-            left: 100%;
-            transform: translate(10px, -50%);
-        }
     </style>
 </head>
 <body>
@@ -96,27 +83,27 @@
     <!-- Slide 1: Title -->
     <div id="slide-1" class="slide active text-center">
         <img src="logo.png" alt="L.E.A.P. Logo" class="w-48 h-48 mb-8">
-        <h1 class="text-6xl font-extrabold text-gray-900">L.E.A.P. Protocol</h1>
+        <h1 class="text-6xl font-extrabold text-gray-900">L.E.A.P.</h1>
         <p class="gradient-text text-3xl mt-4">Local Equity Access Platform</p>
-        <p class="mt-8 text-slate-600">Forging the future of community-driven capital.</p>
+        <p class="mt-8 text-slate-600 text-xl">Invest in the businesses you see every day.</p>
     </div>
 
     <!-- Slide 2: The Problem -->
     <div id="slide-2" class="slide text-center">
-        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">The Legacy System is Obsolete</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Traditional capital formation is a bottleneck to innovation.</h1>
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">An Untapped Opportunity</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Great local businesses and their communities are disconnected.</h1>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl">
             <div class="card-glow p-6 rounded-lg">
-                <h3 class="text-2xl font-bold text-gray-900">Slow & Centralized</h3>
-                <p class="mt-2 text-slate-600">Capital is locked behind gatekeepers, stifling growth for most businesses.</p>
+                <h3 class="text-2xl font-bold text-gray-900">For Businesses: Growth is Hard</h3>
+                <p class="mt-2 text-slate-600">Local shops, cafes, and services struggle to get funding from slow banks and don't have access to big investors.</p>
             </div>
             <div class="card-glow p-6 rounded-lg">
-                <h3 class="text-2xl font-bold text-gray-900">Inaccessible</h3>
-                <p class="mt-2 text-slate-600">The vast majority of terrestrial enterprises are excluded from venture-style funding.</p>
+                <h3 class="text-2xl font-bold text-gray-900">For People: Investing Feels Distant</h3>
+                <p class="mt-2 text-slate-600">The stock market feels impersonal. You want to support your community, but there's no easy way to invest in a local business you love.</p>
             </div>
              <div class="card-glow p-6 rounded-lg">
-                <h3 class="text-2xl font-bold text-gray-900">Illiquid Equity</h3>
-                <p class="mt-2 text-slate-600">Business owners have no way to unlock the value of their equity without selling the company.</p>
+                <h3 class="text-2xl font-bold text-gray-900">For Communities: Potential is Lost</h3>
+                <p class="mt-2 text-slate-600">When local businesses can't grow, our communities miss out on new jobs and economic vitality. Money leaves the local area.</p>
             </div>
         </div>
     </div>
@@ -124,8 +111,8 @@
     <!-- Slide 3: The Solution -->
     <div id="slide-3" class="slide text-center">
         <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">The L.E.A.P. Paradigm</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">A decentralized protocol to transmute enterprises into fluid, on-chain assets.</h1>
-        <p class="mt-6 text-xl text-slate-700 max-w-3xl">We bypass archaic infrastructure, creating a universal asset layer where capital is permissionless, transparent, and fuels community ventures directly.</p>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">A simple platform for local people to invest in local businesses.</h1>
+        <p class="mt-6 text-xl text-slate-700 max-w-3xl">L.E.A.P. creates a direct connection, allowing you to buy a small piece of a local business, share in its success, and help your community thrive.</p>
         <!-- START: Flowchart -->
         <div class="mt-8 w-full max-w-5xl flex items-center justify-between text-center">
 
@@ -134,29 +121,29 @@
                  <div class="p-4 rounded-full bg-green-100 border border-green-200">
                     <svg class="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 </div>
-                <h3 class="mt-2 text-lg font-bold text-gray-800">Business Owner</h3>
-                <p class="text-sm text-slate-600">Mints NFT & receives capital</p>
+                <h3 class="mt-2 text-lg font-bold text-gray-800">Local Business</h3>
+                <p class="text-sm text-slate-600">Offers digital shares & gets funding</p>
             </div>
 
             <!-- Arrows -->
             <div class="flex-1 flex flex-col items-center justify-center px-4">
-                <div class="text-green-600 font-bold text-sm">Equity</div>
-                <div class="w-full h-0.5 bg-green-500" style="background-image: linear-gradient(to right, #16a34a, #84cc16);"></div>
-                <div class="mt-1 text-green-600 font-bold text-sm transform rotate-180">Capital</div>
+                <div class="text-green-600 font-bold text-sm">Shares</div>
+                <div class="w-full h-0.5" style="background-image: linear-gradient(to right, #16a34a, #84cc16);"></div>
+                <div class="mt-1 text-green-600 font-bold text-sm">Funding</div>
             </div>
 
             <!-- L.E.A.P. Protocol -->
              <div class="flex flex-col items-center w-1/3">
-                 <img src="Logo.png" alt="L.E.A.P. Logo" class="w-20 h-20">
-                <h3 class="mt-2 text-lg font-bold text-gray-800">L.E.A.P. Protocol</h3>
-                <p class="text-sm text-slate-600">Decentralized Marketplace</p>
+                 <img src="logo.png" alt="L.E.A.P. Logo" class="w-20 h-20">
+                <h3 class="mt-2 text-lg font-bold text-gray-800">L.E.A.P. Marketplace</h3>
+                <p class="text-sm text-slate-600">Simple & Transparent</p>
             </div>
 
             <!-- Arrows -->
             <div class="flex-1 flex flex-col items-center justify-center px-4">
-                <div class="text-green-600 font-bold text-sm">E.A.T.s</div>
-                <div class="w-full h-0.5 bg-green-500" style="background-image: linear-gradient(to right, #84cc16, #16a34a);"></div>
-                 <div class="mt-1 text-green-600 font-bold text-sm transform rotate-180">Capital</div>
+                <div class="text-green-600 font-bold text-sm">Shares</div>
+                <div class="w-full h-0.5" style="background-image: linear-gradient(to right, #84cc16, #16a34a);"></div>
+                 <div class="mt-1 text-green-600 font-bold text-sm">Funding</div>
             </div>
 
             <!-- Investors -->
@@ -164,8 +151,8 @@
                  <div class="p-4 rounded-full bg-green-100 border border-green-200">
                     <svg class="w-8 h-8 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                 </div>
-                <h3 class="mt-2 text-lg font-bold text-gray-800">Investors</h3>
-                <p class="text-sm text-slate-600">Provide capital & get equity</p>
+                <h3 class="mt-2 text-lg font-bold text-gray-800">Community Investors</h3>
+                <p class="text-sm text-slate-600">Provide funding & get shares</p>
             </div>
 
         </div>
@@ -174,28 +161,77 @@
 
     <!-- Slide 4: How It Works -->
     <div id="slide-4" class="slide">
-        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Core Protocol Architecture</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Three Phases to On-Chain Syndication</h1>
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">How It Works</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Three Simple Steps</h1>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
             <div class="card-glow p-6 rounded-lg text-center">
-                <h3 class="gradient-text text-2xl font-bold">Phase I: Encode</h3>
-                <p class="mt-2 font-semibold text-gray-800">An enterprise's legal data is encoded into a unique "Syndicate NFT," creating an immutable proof-of-existence.</p>
+                <h3 class="gradient-text text-2xl font-bold">1. Get Verified</h3>
+                <p class="mt-2 font-semibold text-gray-800">A local business securely puts its registration on the platform, creating a trusted digital identity everyone can see.</p>
             </div>
              <div class="card-glow p-6 rounded-lg text-center">
-                <h3 class="gradient-text text-2xl font-bold">Phase II: Synthesize</h3>
-                <p class="mt-2 font-semibold text-gray-800">Verified data streams are used to calibrate a fair valuation, synthesizing equity into fungible "Equity Access Tokens" (EATs).</p>
+                <h3 class="gradient-text text-2xl font-bold">2. Create Shares</h3>
+                <p class="mt-2 font-semibold text-gray-800">Based on fair and transparent data (like tax returns), the business creates digital shares for the community to buy.</p>
             </div>
             <div class="card-glow p-6 rounded-lg text-center">
-                <h3 class="gradient-text text-2xl font-bold">Phase III: Exchange</h3>
-                <p class="mt-2 font-semibold text-gray-800">EATs are listed on the L.E.A.P. Terminal, allowing investors to acquire, trade, and provide liquidity in a 24/7 market.</p>
+                <h3 class="gradient-text text-2xl font-bold">3. Trade Locally</h3>
+                <p class="mt-2 font-semibold text-gray-800">A simple marketplace where you can browse, buy, and sell shares in the local businesses you believe in.</p>
             </div>
         </div>
     </div>
 
-    <!-- Slide 5: Tech Stack -->
-    <div id="slide-5" class="slide">
-        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Technology Databanks</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Built with a Future-Proof Stack</h1>
+    <!-- Slide 5: The Community Flywheel -->
+    <div id="slide-5" class="slide text-center">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">The Community Flywheel</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl mb-8">When a local business succeeds, everyone wins.</h1>
+        <div class="w-full max-w-2xl h-80 relative">
+            <!-- SVG background arrows -->
+            <svg class="absolute inset-0 w-full h-full opacity-70" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+                        <path d="M 0 0 L 10 5 L 0 10 z" fill="#16a34a" />
+                    </marker>
+                </defs>
+                <path d="M 100 20 A 80 80 0 1 1 20 100" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 20 100 A 80 80 0 1 1 100 180" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 100 180 A 80 80 0 1 1 180 100" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+                <path d="M 180 100 A 80 80 0 1 1 100 20" stroke="#16a34a" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" />
+            </svg>
+
+            <!-- Text Nodes -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 text-center">
+                <div class="p-3 bg-green-100 rounded-full inline-block border border-green-200">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01M12 6v-1m0-1V4m0 2.01v.01M12 14c-1.11 0-2.08-.402-2.599-1M12 14v1m0-1v-.01M12 16v1m0 1v1m0-2.01v-.01"></path></svg>
+                </div>
+                <p class="mt-2 text-sm font-semibold text-gray-800">You invest in a local business</p>
+            </div>
+
+            <div class="absolute right-0 top-1/2 -translate-y-1/2 w-48 text-center">
+                 <div class="p-3 bg-green-100 rounded-full inline-block border border-green-200">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                </div>
+                <p class="mt-2 text-sm font-semibold text-gray-800">Business grows & creates jobs</p>
+            </div>
+
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 text-center">
+                 <div class="p-3 bg-green-100 rounded-full inline-block border border-green-200">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </div>
+                <p class="mt-2 text-sm font-semibold text-gray-800">Your investment grows in value</p>
+            </div>
+
+            <div class="absolute left-0 top-1/2 -translate-y-1/2 w-48 text-center">
+                 <div class="p-3 bg-green-100 rounded-full inline-block border border-green-200">
+                    <svg class="w-6 h-6 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <p class="mt-4 text-sm font-semibold text-gray-800">Wealth stays in the community</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Tech Stack -->
+    <div id="slide-6" class="slide">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Technology</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Built with a Secure & Modern Stack</h1>
         <div class="max-w-4xl w-full grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 transition-colors">
                 <p class="text-xl font-bold text-gray-900">React / Next.js</p>
@@ -216,39 +252,39 @@
         </div>
     </div>
 
-    <!-- Slide 6: Roadmap -->
-    <div id="slide-6" class="slide">
-        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Flightpath Protocol</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Our Trajectory for a Decentralized Future</h1>
+    <!-- Slide 7: Roadmap -->
+    <div id="slide-7" class="slide">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Our Roadmap</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Our Journey to Empower Communities</h1>
         <div class="max-w-5xl w-full flex flex-col md:flex-row justify-between items-center relative">
             <!-- The line -->
             <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-green-400 to-lime-400 opacity-50 transform -translate-y-1/2 hidden md:block"></div>
             <div class="flex-1 text-center p-4 z-10">
-                <h3 class="text-2xl font-bold text-gray-900">Phase 1: Singularity</h3>
+                <h3 class="text-2xl font-bold text-gray-900">Phase 1: Community Governance</h3>
                 <p class="text-green-600 font-semibold">(Q1 2026)</p>
-                <p class="mt-2 text-slate-700">Implement DAO Governance & Asset Synthesis.</p>
+                <p class="mt-2 text-slate-700">Allow share holders to vote on business ideas.</p>
             </div>
             <div class="flex-1 text-center p-4 z-10">
-                <h3 class="text-2xl font-bold text-gray-900">Phase 2: Quantum Proof</h3>
+                <h3 class="text-2xl font-bold text-gray-900">Phase 2: Enhanced Privacy</h3>
                 <p class="text-green-600 font-semibold">(Q2 2026)</p>
-                <p class="mt-2 text-slate-700">Integrate Zero-Knowledge Data Streams.</p>
+                <p class="mt-2 text-slate-700">Integrate new tech to keep sensitive data private.</p>
             </div>
             <div class="flex-1 text-center p-4 z-10">
-                <h3 class="text-2xl font-bold text-gray-900">Phase 3: Ubiquity</h3>
+                <h3 class="text-2xl font-bold text-gray-900">Phase 3: Mainstream Adoption</h3>
                 <p class="text-green-600 font-semibold">(Q3 2026)</p>
-                <p class="mt-2 text-slate-700">Launch Mobile Interface & Fiat Data-Links.</p>
+                <p class="mt-2 text-slate-700">Launch a mobile app and make it easy to invest with cash.</p>
             </div>
         </div>
     </div>
 
-    <!-- Slide 7: Call to Action -->
-    <div id="slide-7" class="slide text-center">
-        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">Join The Collective</h2>
-        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Let's Build the Future of Finance, Together.</h1>
-        <p class="mt-6 text-xl text-slate-700 max-w-3xl">We are actively seeking collaborators, investors, and early adopters to join our mission.</p>
+    <!-- Slide 8: Call to Action -->
+    <div id="slide-8" class="slide text-center">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">Join Your Community</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Be a part of your town's success story.</h1>
+        <p class="mt-6 text-xl text-slate-700 max-w-3xl">L.E.A.P. is more than a platform—it's a movement to bring investment back home. Join us.</p>
          <div class="mt-10">
-            <a href="https://github.com/your-username/leap-protocol" target="_blank" class="bg-gradient-to-r from-green-500 to-lime-500 text-white font-bold text-lg px-10 py-4 rounded-lg hover:opacity-90 transition-opacity shadow-lg shadow-lime-500/30">
-                Explore the GitHub Repository
+            <a href="https://github.com/chandan989/L.E.A.P." target="_blank" class="bg-gradient-to-r from-green-500 to-lime-500 text-white font-bold text-lg px-10 py-4 rounded-lg hover:opacity-90 transition-opacity shadow-lg shadow-lime-500/30">
+                Explore the Project on GitHub
             </a>
         </div>
     </div>
@@ -284,15 +320,19 @@
         function nextSlide() {
             if (currentSlide < totalSlides) {
                 currentSlide++;
-                showSlide(currentSlide);
+            } else {
+                currentSlide = 1; // Loop back to the first slide
             }
+            showSlide(currentSlide);
         }
 
         function prevSlide() {
             if (currentSlide > 1) {
                 currentSlide--;
-                showSlide(currentSlide);
+            } else {
+                currentSlide = totalSlides; // Loop back to the last slide
             }
+            showSlide(currentSlide);
         }
 
         document.getElementById('next').addEventListener('click', nextSlide);
@@ -300,8 +340,10 @@
 
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' || e.key === ' ') {
+                e.preventDefault(); // Prevent space from scrolling the page
                 nextSlide();
             } else if (e.key === 'ArrowLeft') {
+                e.preventDefault();
                 prevSlide();
             }
         });
@@ -311,4 +353,5 @@
     </script>
 </body>
 </html>
+
 
