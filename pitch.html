@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.E.A.P. Protocol Pitch Deck</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Logo.png">
+    <style>
+        body, html {
+            font-family: 'Exo 2', sans-serif;
+            background-color: #ffffff;
+            color: #1f2937; /* Dark Gray */
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        .slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out;
+            /* Subtle green gradient for light theme */
+            background-image: radial-gradient(circle at top left, rgba(22, 163, 74, 0.05), transparent 40%),
+                              radial-gradient(circle at bottom right, rgba(132, 204, 22, 0.04), transparent 40%);
+        }
+        .slide.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #16a34a, #65a30d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glow {
+            border: 1px solid rgba(22, 163, 74, 0.2);
+            background-color: rgba(249, 250, 251, 0.7); /* Off-white */
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-glow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(22, 163, 74, 0.1), 0 10px 10px -5px rgba(22, 163, 74, 0.04);
+        }
+        .nav-arrow {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 100;
+        }
+        .nav-arrow:hover {
+            background-color: rgba(34, 197, 94, 0.1);
+            transform: translateY(-50%) scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Slide 1: Title -->
+    <div id="slide-1" class="slide active text-center">
+        <img src="Logo.png" alt="L.E.A.P. Logo" class="w-48 h-48 mb-8">
+        <h1 class="text-6xl font-extrabold text-gray-900">L.E.A.P. Protocol</h1>
+        <p class="gradient-text text-3xl mt-4">Local Equity Access Platform</p>
+        <p class="mt-8 text-slate-600">Forging the future of community-driven capital.</p>
+    </div>
+
+    <!-- Slide 2: The Problem -->
+    <div id="slide-2" class="slide text-center">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">The Legacy System is Obsolete</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Traditional capital formation is a bottleneck to innovation.</h1>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
+            <div class="card-glow p-6 rounded-lg">
+                <h3 class="text-2xl font-bold text-gray-900">Slow & Centralized</h3>
+                <p class="mt-2 text-slate-600">Capital is locked behind gatekeepers, stifling growth for most businesses.</p>
+            </div>
+            <div class="card-glow p-6 rounded-lg">
+                <h3 class="text-2xl font-bold text-gray-900">Inaccessible</h3>
+                <p class="mt-2 text-slate-600">The vast majority of terrestrial enterprises are excluded from venture-style funding.</p>
+            </div>
+             <div class="card-glow p-6 rounded-lg">
+                <h3 class="text-2xl font-bold text-gray-900">Illiquid Equity</h3>
+                <p class="mt-2 text-slate-600">Business owners have no way to unlock the value of their equity without selling the company.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: The Solution -->
+    <div id="slide-3" class="slide text-center">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">The L.E.A.P. Paradigm</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">A decentralized protocol to transmute enterprises into fluid, on-chain assets.</h1>
+        <p class="mt-6 text-xl text-slate-700 max-w-3xl">We bypass archaic infrastructure, creating a universal asset layer where capital is permissionless, transparent, and fuels community ventures directly.</p>
+        <img src="https://placehold.co/700x300/f3f4f6/16a34a?text=Flow+of+Capital+Reimagined" alt="Solution Diagram" class="mt-8 rounded-lg shadow-xl border border-gray-200">
+    </div>
+
+    <!-- Slide 4: How It Works -->
+    <div id="slide-4" class="slide">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Core Protocol Architecture</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Three Phases to On-Chain Syndication</h1>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
+            <div class="card-glow p-6 rounded-lg text-center">
+                <h3 class="gradient-text text-2xl font-bold">Phase I: Encode</h3>
+                <p class="mt-2 font-semibold text-gray-800">An enterprise's legal data is encoded into a unique "Syndicate NFT," creating an immutable proof-of-existence.</p>
+            </div>
+             <div class="card-glow p-6 rounded-lg text-center">
+                <h3 class="gradient-text text-2xl font-bold">Phase II: Synthesize</h3>
+                <p class="mt-2 font-semibold text-gray-800">Verified data streams are used to calibrate a fair valuation, synthesizing equity into fungible "Equity Access Tokens" (EATs).</p>
+            </div>
+            <div class="card-glow p-6 rounded-lg text-center">
+                <h3 class="gradient-text text-2xl font-bold">Phase III: Exchange</h3>
+                <p class="mt-2 font-semibold text-gray-800">EATs are listed on the L.E.A.P. Terminal, allowing investors to acquire, trade, and provide liquidity in a 24/7 market.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Tech Stack -->
+    <div id="slide-5" class="slide">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Technology Databanks</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Built with a Future-Proof Stack</h1>
+        <div class="max-w-4xl w-full grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 transition-colors">
+                <p class="text-xl font-bold text-gray-900">React / Next.js</p>
+                <p class="text-slate-600">Frontend Interface</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 transition-colors">
+                <p class="text-xl font-bold text-gray-900">Solidity</p>
+                <p class="text-slate-600">Blockchain Ledger</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 transition-colors">
+                <p class="text-xl font-bold text-gray-900">IPFS</p>
+                <p class="text-slate-600">Decentralized Storage</p>
+            </div>
+            <div class="p-4 bg-gray-100 rounded-lg border border-gray-200 transition-colors">
+                <p class="text-xl font-bold text-gray-900">Ethers.js</p>
+                <p class="text-slate-600">Wallet Connection</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Roadmap -->
+    <div id="slide-6" class="slide">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4 text-center">Flightpath Protocol</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 text-center mb-12">Our Trajectory for a Decentralized Future</h1>
+        <div class="max-w-5xl w-full flex flex-col md:flex-row justify-between items-center relative">
+            <!-- The line -->
+            <div class="absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-green-400 to-lime-400 opacity-50 transform -translate-y-1/2 hidden md:block"></div>
+            <div class="flex-1 text-center p-4 z-10">
+                <h3 class="text-2xl font-bold text-gray-900">Phase 1: Singularity</h3>
+                <p class="text-green-600 font-semibold">(Q1 2026)</p>
+                <p class="mt-2 text-slate-700">Implement DAO Governance & Asset Synthesis.</p>
+            </div>
+            <div class="flex-1 text-center p-4 z-10">
+                <h3 class="text-2xl font-bold text-gray-900">Phase 2: Quantum Proof</h3>
+                <p class="text-green-600 font-semibold">(Q2 2026)</p>
+                <p class="mt-2 text-slate-700">Integrate Zero-Knowledge Data Streams.</p>
+            </div>
+            <div class="flex-1 text-center p-4 z-10">
+                <h3 class="text-2xl font-bold text-gray-900">Phase 3: Ubiquity</h3>
+                <p class="text-green-600 font-semibold">(Q3 2026)</p>
+                <p class="mt-2 text-slate-700">Launch Mobile Interface & Fiat Data-Links.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Call to Action -->
+    <div id="slide-7" class="slide text-center">
+        <h2 class="text-lg font-bold uppercase tracking-widest text-green-600 mb-4">Join The Collective</h2>
+        <h1 class="text-5xl font-extrabold text-gray-900 max-w-4xl">Let's Build the Future of Finance, Together.</h1>
+        <p class="mt-6 text-xl text-slate-700 max-w-3xl">We are actively seeking collaborators, investors, and early adopters to join our mission.</p>
+         <div class="mt-10">
+            <a href="https://github.com/your-username/leap-protocol" target="_blank" class="bg-gradient-to-r from-green-500 to-lime-500 text-white font-bold text-lg px-10 py-4 rounded-lg hover:opacity-90 transition-opacity shadow-lg shadow-lime-500/30">
+                Explore the GitHub Repository
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <div id="prev" class="nav-arrow left-4 md:left-8 text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+    </div>
+    <div id="next" class="nav-arrow right-4 md:right-8 text-gray-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+    </div>
+
+    <!-- Slide Counter -->
+    <div id="slide-counter" class="fixed bottom-4 right-4 text-slate-600 bg-white/50 backdrop-blur-sm px-3 py-1 rounded-lg text-sm border border-gray-200"></div>
+
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = document.querySelectorAll('.slide').length;
+        const slideCounter = document.getElementById('slide-counter');
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            const newSlide = document.getElementById(`slide-${slideNumber}`);
+            if (newSlide) {
+                newSlide.classList.add('active');
+                slideCounter.textContent = `${slideNumber} / ${totalSlides}`;
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        document.getElementById('next').addEventListener('click', nextSlide);
+        document.getElementById('prev').addEventListener('click', prevSlide);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Initial setup
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
+
